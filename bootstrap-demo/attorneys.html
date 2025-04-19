@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Attorneys - Aegis Legal Advocates</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <style>
+      .attorney-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .attorney-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .practice-badge {
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-shield-shaded me-2"></i>Aegis Legal Advocates
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="attorneys.html">Attorneys</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-primary text-white py-5">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-5 fw-bold mb-3">Meet Our Legal Team</h1>
+            <p class="lead mb-4">
+              Experienced attorneys dedicated to achieving the best outcomes for
+              our clients
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#partners" class="btn btn-light">Partners</a>
+              <a href="#associates" class="btn btn-outline-light">Associates</a>
+              <a href="#practice-areas" class="btn btn-outline-light"
+                >Practice Areas</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+              alt="Legal Team"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attorneys Content -->
+    <div class="container my-5">
+      <!-- Partners Section -->
+      <div class="mb-5" id="partners">
+        <h2 class="text-center mb-4 border-bottom pb-2">Partners</h2>
+        <div class="row g-4">
+          <!-- Attorney 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 attorney-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/45.jpg"
+                class="card-img-top"
+                alt="Sarah Johnson"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Sarah Johnson</h3>
+                <p class="text-muted">Managing Partner</p>
+                <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                  <span class="badge bg-primary practice-badge"
+                    >Corporate Law</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Mergers & Acquisitions</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Business Litigation</span
+                  >
+                </div>
+                <p class="card-text">
+                  Specializing in corporate law with over 15 years of experience
+                  in business litigation and transactions.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="Email"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="View Bio"
+                    ><i class="bi bi-file-earmark-text-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#attorneyModal1"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attorney 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 attorney-card">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                class="card-img-top"
+                alt="Michael Chen"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Michael Chen</h3>
+                <p class="text-muted">Senior Partner</p>
+                <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                  <span class="badge bg-primary practice-badge"
+                    >Family Law</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Civil Litigation</span
+                  >
+                  <span class="badge bg-primary practice-badge">Divorce</span>
+                </div>
+                <p class="card-text">
+                  Expert in family law and civil litigation with a reputation
+                  for compassionate yet effective representation.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="Email"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="View Bio"
+                    ><i class="bi bi-file-earmark-text-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#attorneyModal2"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attorney 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 attorney-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                class="card-img-top"
+                alt="Elizabeth Martinez"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Elizabeth Martinez</h3>
+                <p class="text-muted">Partner</p>
+                <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                  <span class="badge bg-primary practice-badge"
+                    >Real Estate</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Estate Planning</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Property Law</span
+                  >
+                </div>
+                <p class="card-text">
+                  Specializes in real estate law and estate planning, helping
+                  clients secure their property and legacy.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="Email"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="View Bio"
+                    ><i class="bi bi-file-earmark-text-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#attorneyModal3"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Associates Section -->
+      <div class="mb-5" id="associates">
+        <h2 class="text-center mb-4 border-bottom pb-2">Associates</h2>
+        <div class="row g-4">
+          <!-- Attorney 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 attorney-card">
+              <img
+                src="https://randomuser.me/api/portraits/men/75.jpg"
+                class="card-img-top"
+                alt="Robert Williams"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Robert Williams</h3>
+                <p class="text-muted">Senior Associate</p>
+                <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                  <span class="badge bg-primary practice-badge"
+                    >Personal Injury</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Medical Malpractice</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Accident Claims</span
+                  >
+                </div>
+                <p class="card-text">
+                  Focuses on personal injury cases, fighting aggressively for
+                  clients' rights and fair compensation.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="Email"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="View Bio"
+                    ><i class="bi bi-file-earmark-text-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#attorneyModal4"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attorney 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 attorney-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/33.jpg"
+                class="card-img-top"
+                alt="Jennifer Lee"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Jennifer Lee</h3>
+                <p class="text-muted">Associate</p>
+                <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                  <span class="badge bg-primary practice-badge"
+                    >Intellectual Property</span
+                  >
+                  <span class="badge bg-primary practice-badge"
+                    >Technology Law</span
+                  >
+                  <span class="badge bg-primary practice-badge">Patents</span>
+                </div>
+                <p class="card-text">
+                  Specializes in intellectual property and technology law,
+                  protecting clients' innovations and digital assets.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="Email"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="View Bio"
+                    ><i class="bi bi-file-earmark-text-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#attorneyModal5"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attorney 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 attorney-card">
+              <img
+                src="https://randomuser.me/api/portraits/men/90.jpg"
+                class="card-img-top"
+                alt="David Kim"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">David Kim</h3>
+                <p class="text-muted">Criminal Defense Attorney</p>
+                <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                  <span class="badge bg-primary practice-badge"
+                    >Criminal Defense</span
+                  >
+                  <span class="badge bg-primary practice-badge">DUI/DWI</span>
+                  <span class="badge bg-primary practice-badge"
+                    >White Collar Crime</span
+                  >
+                </div>
+                <p class="card-text">
+                  Former prosecutor with extensive courtroom experience
+                  defending clients in criminal matters.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="Email"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-dark"
+                    data-bs-toggle="tooltip"
+                    title="View Bio"
+                    ><i class="bi bi-file-earmark-text-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#attorneyModal6"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice Areas -->
+      <div class="row mt-5" id="practice-areas">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h2 class="mb-0">Practice Areas</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-3 border-0">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                          <i class="bi bi-building text-primary fs-4"></i>
+                        </div>
+                        <h3 class="h5 mb-0">Corporate Law</h3>
+                        <span class="badge bg-primary ms-auto"
+                          >4 attorneys</span
+                        >
+                      </div>
+                      <p>
+                        Comprehensive legal services for businesses including
+                        formation, contracts, mergers & acquisitions.
+                      </p>
+                      <a
+                        href="services.html#corporate"
+                        class="btn btn-sm btn-outline-primary"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card mb-3 border-0">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                          <i class="bi bi-people-fill text-primary fs-4"></i>
+                        </div>
+                        <h3 class="h5 mb-0">Family Law</h3>
+                        <span class="badge bg-primary ms-auto"
+                          >3 attorneys</span
+                        >
+                      </div>
+                      <p>
+                        Sensitive handling of family matters including divorce,
+                        child custody, and adoption.
+                      </p>
+                      <a
+                        href="services.html#family"
+                        class="btn btn-sm btn-outline-primary"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                          <i class="bi bi-house-door text-primary fs-4"></i>
+                        </div>
+                        <h3 class="h5 mb-0">Real Estate</h3>
+                        <span class="badge bg-primary ms-auto"
+                          >2 attorneys</span
+                        >
+                      </div>
+                      <p>
+                        Expert guidance for property transactions, disputes, and
+                        landlord-tenant matters.
+                      </p>
+                      <a
+                        href="services.html#real-estate"
+                        class="btn btn-sm btn-outline-primary"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-3 border-0">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                          <i class="bi bi-heart-pulse text-primary fs-4"></i>
+                        </div>
+                        <h3 class="h5 mb-0">Personal Injury</h3>
+                        <span class="badge bg-primary ms-auto"
+                          >3 attorneys</span
+                        >
+                      </div>
+                      <p>
+                        Aggressive representation for victims of accidents and
+                        medical malpractice.
+                      </p>
+                      <a
+                        href="services.html#injury"
+                        class="btn btn-sm btn-outline-primary"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card mb-3 border-0">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                          <i class="bi bi-shield-lock text-primary fs-4"></i>
+                        </div>
+                        <h3 class="h5 mb-0">Criminal Defense</h3>
+                        <span class="badge bg-primary ms-auto"
+                          >2 attorneys</span
+                        >
+                      </div>
+                      <p>
+                        Vigorous defense for criminal charges at both state and
+                        federal levels.
+                      </p>
+                      <a
+                        href="services.html#criminal"
+                        class="btn btn-sm btn-outline-primary"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                          <i
+                            class="bi bi-file-earmark-text text-primary fs-4"
+                          ></i>
+                        </div>
+                        <h3 class="h5 mb-0">Estate Planning</h3>
+                        <span class="badge bg-primary ms-auto"
+                          >2 attorneys</span
+                        >
+                      </div>
+                      <p>
+                        Comprehensive planning for your legacy including wills,
+                        trusts, and probate.
+                      </p>
+                      <a
+                        href="services.html#estate"
+                        class="btn btn-sm btn-outline-primary"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Stats -->
+    <div class="bg-light py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h2 class="display-4 fw-bold text-primary">15+</h2>
+            <p class="lead">Years of Combined Experience</p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h2 class="display-4 fw-bold text-primary">1000+</h2>
+            <p class="lead">Cases Successfully Handled</p>
+          </div>
+          <div class="col-md-4">
+            <h2 class="display-4 fw-bold text-primary">6</h2>
+            <p class="lead">Dedicated Attorneys</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consultation Banner -->
+    <div class="bg-dark text-white py-5">
+      <div class="container text-center">
+        <h2 class="mb-3">Ready to Work With Our Team?</h2>
+        <p class="lead mb-4">
+          Schedule a free initial consultation with one of our experienced
+          attorneys.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="contact.html" class="btn btn-primary btn-lg"
+            >Contact Us Today</a
+          >
+          <a href="tel:+15551234567" class="btn btn-outline-light btn-lg">
+            <i class="bi bi-telephone-fill me-2"></i>(555) 123-4567
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Aegis Legal Advocates</h5>
+            <p>
+              Providing exceptional legal services with integrity and dedication
+              since 2005.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Home</a></li>
+              <li><a href="services.html" class="text-white">Services</a></li>
+              <li><a href="attorneys.html" class="text-white">Attorneys</a></li>
+              <li><a href="contact.html" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <address>
+              123 Justice Boulevard<br />
+              Suite 500<br />
+              Legal District, Cityville 10001<br />
+              <i class="bi bi-telephone"></i> (555) 123-4567
+            </address>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center">
+          <small>&copy; 2023 Aegis Legal Advocates. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Attorney Modals -->
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="attorneyModal1"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sarah Johnson - Managing Partner</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/45.jpg"
+                  class="img-fluid rounded mb-3"
+                  alt="Sarah Johnson"
+                />
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <strong>Position:</strong> Managing Partner
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Practice Areas:</strong> Corporate Law, M&A
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Education:</strong> Harvard Law School
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Admitted:</strong> NY, NJ, CT Bars
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <h4>Biography</h4>
+                <p>
+                  Sarah Johnson is the founding partner of Aegis Legal Advocates
+                  and heads our corporate practice. With over 15 years of
+                  experience in business law, she has successfully guided
+                  numerous companies through complex transactions and litigation
+                  matters.
+                </p>
+                <p>
+                  Sarah specializes in mergers and acquisitions, corporate
+                  governance, and business litigation. Her strategic approach to
+                  corporate legal matters has earned her recognition as one of
+                  the region's top corporate attorneys.
+                </p>
+                <h4 class="mt-4">Notable Cases</h4>
+                <ul>
+                  <li>
+                    Led $500M acquisition of TechCorp by Global Enterprises
+                  </li>
+                  <li>
+                    Successfully defended MegaRetail in landmark antitrust case
+                  </li>
+                  <li>
+                    Structured international joint venture for PharmaGroup
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="contact.html" class="btn btn-primary"
+              >Request Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add similar modals for other attorneys (Modal 2 through Modal 6) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

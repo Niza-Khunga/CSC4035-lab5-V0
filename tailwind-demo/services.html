@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Aegis Legal Advocates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .practice-icon {
+        width: 60px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-xl font-bold flex items-center">
+          <i class="bi bi-shield-shaded mr-2"></i>
+          Aegis Legal Advocates
+        </a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="services.html" class="text-blue-400 font-medium">Services</a>
+          <a href="attorneys.html" class="hover:text-gray-300">Attorneys</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-blue-700 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Legal Services</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Comprehensive legal solutions tailored to protect your rights and
+          achieve your goals
+        </p>
+        <a
+          href="#contact"
+          class="bg-white text-blue-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition inline-block"
+        >
+          Free Consultation
+        </a>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="container mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Practice Areas</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Our experienced attorneys specialize in these key areas of law,
+          providing expert guidance and representation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Corporate Law -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300"
+        >
+          <div class="bg-blue-100 p-6 flex justify-center">
+            <div
+              class="bg-blue-600 text-white practice-icon rounded-full flex items-center justify-center"
+            >
+              <i class="bi bi-building text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Corporate Law</h3>
+            <p class="text-gray-600 mb-4">
+              Expert guidance for businesses of all sizes, from formation to
+              complex transactions and compliance matters.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Business Formation
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Contracts & Agreements
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Mergers & Acquisitions
+              </li>
+            </ul>
+            <a
+              href="contact.html"
+              class="text-blue-600 font-medium inline-flex items-center hover:text-blue-800"
+            >
+              Learn More <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Family Law -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300"
+        >
+          <div class="bg-blue-100 p-6 flex justify-center">
+            <div
+              class="bg-blue-600 text-white practice-icon rounded-full flex items-center justify-center"
+            >
+              <i class="bi bi-people-fill text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Family Law</h3>
+            <p class="text-gray-600 mb-4">
+              Compassionate representation for sensitive family matters with a
+              focus on achieving the best possible outcomes.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Divorce & Separation
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Child Custody & Support
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Prenuptial Agreements
+              </li>
+            </ul>
+            <a
+              href="contact.html"
+              class="text-blue-600 font-medium inline-flex items-center hover:text-blue-800"
+            >
+              Learn More <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Real Estate -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300"
+        >
+          <div class="bg-blue-100 p-6 flex justify-center">
+            <div
+              class="bg-blue-600 text-white practice-icon rounded-full flex items-center justify-center"
+            >
+              <i class="bi bi-house-door text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Real Estate</h3>
+            <p class="text-gray-600 mb-4">
+              Comprehensive legal services for residential and commercial
+              property transactions and disputes.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Property Transactions
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Title & Closing Services
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Landlord-Tenant Disputes
+              </li>
+            </ul>
+            <a
+              href="contact.html"
+              class="text-blue-600 font-medium inline-flex items-center hover:text-blue-800"
+            >
+              Learn More <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Personal Injury -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300"
+        >
+          <div class="bg-blue-100 p-6 flex justify-center">
+            <div
+              class="bg-blue-600 text-white practice-icon rounded-full flex items-center justify-center"
+            >
+              <i class="bi bi-heart-pulse text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Personal Injury</h3>
+            <p class="text-gray-600 mb-4">
+              Aggressive representation for accident victims to secure fair
+              compensation for injuries and losses.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Auto Accidents
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Medical Malpractice
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Workplace Injuries
+              </li>
+            </ul>
+            <a
+              href="contact.html"
+              class="text-blue-600 font-medium inline-flex items-center hover:text-blue-800"
+            >
+              Learn More <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Estate Planning -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300"
+        >
+          <div class="bg-blue-100 p-6 flex justify-center">
+            <div
+              class="bg-blue-600 text-white practice-icon rounded-full flex items-center justify-center"
+            >
+              <i class="bi bi-file-earmark-text text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Estate Planning</h3>
+            <p class="text-gray-600 mb-4">
+              Protect your legacy and ensure your wishes are carried out with
+              comprehensive estate planning.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Wills & Trusts
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Probate Administration
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Power of Attorney
+              </li>
+            </ul>
+            <a
+              href="contact.html"
+              class="text-blue-600 font-medium inline-flex items-center hover:text-blue-800"
+            >
+              Learn More <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Criminal Defense -->
+        <div
+          class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300"
+        >
+          <div class="bg-blue-100 p-6 flex justify-center">
+            <div
+              class="bg-blue-600 text-white practice-icon rounded-full flex items-center justify-center"
+            >
+              <i class="bi bi-shield-lock text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Criminal Defense</h3>
+            <p class="text-gray-600 mb-4">
+              Vigorous defense for criminal charges at both state and federal
+              levels to protect your rights and freedom.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                DUI/DWI Defense
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                Drug Charges
+              </li>
+              <li class="flex items-center">
+                <i class="bi bi-check-circle-fill text-blue-500 mr-2"></i>
+                White Collar Crimes
+              </li>
+            </ul>
+            <a
+              href="contact.html"
+              class="text-blue-600 font-medium inline-flex items-center hover:text-blue-800"
+            >
+              Learn More <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How We Work -->
+    <div class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">Our Legal Process</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            A transparent, client-focused approach to achieving successful
+            outcomes
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+            <div
+              class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="bi bi-search text-blue-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Initial Consultation</h3>
+            <p class="text-gray-600">
+              We listen carefully to understand your situation and evaluate your
+              legal options.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+            <div
+              class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="bi bi-clipboard-data text-blue-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Case Strategy</h3>
+            <p class="text-gray-600">
+              We develop a customized legal strategy tailored to your specific
+              goals.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+            <div
+              class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="bi bi-graph-up-arrow text-blue-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Execution & Resolution</h3>
+            <p class="text-gray-600">
+              We aggressively pursue the best possible outcome for your case.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="container mx-auto px-4 py-16">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <img
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Legal Team"
+            class="rounded-xl shadow-lg w-full"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-6">
+            Why Choose Aegis Legal Advocates?
+          </h2>
+          <div class="space-y-6">
+            <div class="flex">
+              <div class="bg-blue-100 p-3 rounded-full mr-4 flex-shrink-0">
+                <i class="bi bi-award-fill text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Experienced Attorneys</h3>
+                <p class="text-gray-600">
+                  Our team brings decades of combined legal experience across
+                  multiple practice areas.
+                </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="bg-blue-100 p-3 rounded-full mr-4 flex-shrink-0">
+                <i class="bi bi-people-fill text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Client-Centered Approach</h3>
+                <p class="text-gray-600">
+                  We prioritize your needs and keep you informed throughout the
+                  legal process.
+                </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="bg-blue-100 p-3 rounded-full mr-4 flex-shrink-0">
+                <i class="bi bi-graph-up-arrow text-blue-600 text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Proven Results</h3>
+                <p class="text-gray-600">
+                  Successful track record in both settlements and courtroom
+                  litigation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-blue-700 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">Client Testimonials</h2>
+          <p class="text-blue-100 max-w-2xl mx-auto">
+            Hear what our clients say about their experience with our firm
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+            </div>
+            <p class="italic mb-6">
+              "Aegis handled my corporate merger with exceptional
+              professionalism. They made a complex process understandable."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/32.jpg"
+                class="w-12 h-12 rounded-full mr-4"
+                alt="Client"
+              />
+              <div>
+                <h4 class="font-bold">Sarah Johnson</h4>
+                <p class="text-sm text-gray-600">CEO, TechCorp</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+            </div>
+            <p class="italic mb-6">
+              "During my difficult divorce, the Aegis team showed both legal
+              expertise and genuine compassion."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/45.jpg"
+                class="w-12 h-12 rounded-full mr-4"
+                alt="Client"
+              />
+              <div>
+                <h4 class="font-bold">Michael Roberts</h4>
+                <p class="text-sm text-gray-600">Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+              <i class="bi bi-star-fill text-yellow-400"></i>
+            </div>
+            <p class="italic mb-6">
+              "Their real estate attorneys saved me from a bad property deal.
+              Their attention to detail was impressive."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                class="w-12 h-12 rounded-full mr-4"
+                alt="Client"
+              />
+              <div>
+                <h4 class="font-bold">Emily Chen</h4>
+                <p class="text-sm text-gray-600">Real Estate Investor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-gray-900 text-white py-16" id="contact">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">
+          Ready to Discuss Your Legal Needs?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Schedule a free 30-minute consultation with one of our experienced
+          attorneys.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="contact.html"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition"
+          >
+            Contact Us Today
+          </a>
+          <a
+            href="tel:+15551234567"
+            class="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 transition flex items-center justify-center"
+          >
+            <i class="bi bi-telephone-fill mr-2"></i> (555) 123-4567
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <i class="bi bi-shield-shaded mr-2"></i>
+              Aegis Legal Advocates
+            </h3>
+            <p>
+              Providing exceptional legal services with integrity and dedication
+              since 2005.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="hover:text-blue-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="hover:text-blue-400 transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="attorneys.html" class="hover:text-blue-400 transition"
+                  >Attorneys</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-blue-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <address class="not-italic">
+              123 Justice Boulevard<br />
+              Suite 500<br />
+              Legal District, Cityville 10001<br />
+              <i class="bi bi-telephone mr-1"></i> (555) 123-4567
+            </address>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2023 Aegis Legal Advocates. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple mobile menu toggle functionality
+      document
+        .querySelector("nav button")
+        .addEventListener("click", function () {
+          const menu = document.querySelector("nav .hidden.md\\:flex");
+          menu.classList.toggle("hidden");
+          menu.classList.toggle("flex");
+          menu.classList.toggle("flex-col");
+          menu.classList.toggle("absolute");
+          menu.classList.toggle("top-16");
+          menu.classList.toggle("left-0");
+          menu.classList.toggle("right-0");
+          menu.classList.toggle("bg-gray-900");
+          menu.classList.toggle("p-4");
+          menu.classList.toggle("space-y-4");
+          menu.classList.toggle("space-x-0");
+        });
+    </script>
+  </body>
+</html>
